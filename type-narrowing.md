@@ -1,6 +1,6 @@
-Type Narrowing in TypeScript: Using typeof, instanceof, and in
+Title: Type Narrowing in TypeScript: Using typeof, instanceof, and in
 
-In TypeScript, a variable can have more than one possible type. But in application, a specfic type for a variable should only be used. Type narrowing is the way that spacify a specfic type for a variable. It means checking a value’s type at runtime so the compiler can treat it as a more specific type inside that block of code.
+Introduction: In TypeScript, a variable can have more than one possible type. But in application, a specfic type for a variable should only be used. Type narrowing is the way that spacify a specfic type for a variable. It means checking a value’s type at runtime so the compiler can treat it as a more specific type inside that block of code.
 
 What is type narrowing?: 
 Narrowing means going from a wide type (like a union) to a smaller, more exact type. The example is given below:
@@ -66,4 +66,4 @@ function move(vehicle: Car | Boat) {
   }
 }
 
-Type narrowing works safely with values that can be more than one type. The simple rule is: we use typeof for primitives, instanceof for classes, and in for checking object properties.
+Conclusion: Type narrowing works safely with values that can be more than one type. The simple rule is: we use typeof for primitives, instanceof for classes, and in for checking object properties.

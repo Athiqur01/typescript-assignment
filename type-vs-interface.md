@@ -1,6 +1,6 @@
-The differences between type aliases and interface in TypeScript
+Title: The differences between type aliases and interface in TypeScript
 
- TypeScript gives us two main ways to name a type: interface and type. For simple object shapes they are almost identically. Thats why developers often wonder whether which can be used. However, the main differences between interface and type alias are given below: 
+ Introduction: TypeScript gives us two main ways to name a type: interface and type. For simple object shapes they are almost identically. Thats why developers often wonder whether which can be used. However, the main differences between interface and type alias are given below: 
  1. Interface is best for objects on the other hand type creates a custom name (alias) for any valid type. Examples:
              interface User { name: string; }
              type User = { name: string; }
@@ -34,4 +34,4 @@ The differences between type aliases and interface in TypeScript
  a. We use interface instead of type alias for object shapes and public APIs.
  b. We use type alias instead of interface for unions, tuples, mapped/conditional types, or aliases for primitives and utility types like Pick, Omit, or Partial.
 
- For everyday object shapes, interface and type are interchangeable. The real differences are that interfaces support declaration merging and give stricter, earlier errors when extending, while type aliases can express far more than object shapes.
+ Conclusion: For everyday object shapes, interface and type are interchangeable. The real differences are that interfaces support declaration merging and give stricter, earlier errors when extending, while type aliases can express far more than object shapes.
