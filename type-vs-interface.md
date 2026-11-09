@@ -30,8 +30,10 @@ Title: The differences between type aliases and interface in TypeScript
              type Num = { y: number } // Error: duplicate identifier
  4. A class can implement any interface while A class can implement a type only if it resolves to an object shape.
 
- When should we choose one over the other?
- a. We use interface instead of type alias for object shapes and public APIs.
- b. We use type alias instead of interface for unions, tuples, mapped/conditional types, or aliases for primitives and utility types like Pick, Omit, or Partial.
+ When should we choose interface?:
+ We use interface instead of type alias for object shapes and public APIs.
+ 
+ When should we choose type alias?:
+ We use type alias instead of interface for unions, tuples, mapped/conditional types, or aliases for primitives and utility types like Pick, Omit, or Partial.
 
  Conclusion: For everyday object shapes, interface and type are interchangeable. The real differences are that interfaces support declaration merging and give stricter, earlier errors when extending, while type aliases can express far more than object shapes.
